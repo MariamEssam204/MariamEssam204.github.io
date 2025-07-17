@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam Essam | AI Engineer | NLP & Computer Vision Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mariam Essam</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="section">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="section-title"><span>Breast Cancer </span>Detection System</h1>
+                <p class="subtitle">Automate binary classification of breast tumors (benign vs. malignant) from mammograms to improve early detection</p>
+            </div>
+            
+            <!-- Image Gallery -->
+            <div class="breast-cancer-gallery">
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="./img/breast-cancer1.png" alt="Breast Cancer Classification Visualization" class="gallery-image">
+                        <p class="gallery-caption">Deep Learning Classification of Benign vs Malignant Tumors</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./img/breast-cancer2.png" alt="Breast Cancer Analysis Results" class="gallery-image">
+                        <p class="gallery-caption">Case examples demonstrating correct classification of difficult borderline cases</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                .breast-cancer-gallery {
+                    margin: 3rem auto;
+                    max-width: 1400px;
+                    padding: 0 20px;
+                }
+                
+                .gallery-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 3rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .gallery-item {
+                    flex: 1 1 100%;
+                    max-width: 900px;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+                
+                .gallery-image {
+                    width: 100%;
+                    height: auto;
+                    max-height: 600px;
+                    object-fit: contain;
+                    border-radius: 12px;
+                    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+                    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+                    border: 1px solid #eee;
+                }
+                
+                .gallery-image:hover {
+                    transform: scale(1.03);
+                    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+                }
+                
+                .gallery-caption {
+                    margin-top: 1.5rem;
+                    font-size: 1.3rem;
+                    color: #222;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    max-width: 800px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            
+                @media (min-width: 1200px) {
+                    .gallery-item {
+                        flex: 1 1 45%;
+                        max-width: 800px;
+                    }
+                }
+            </style>
+    </section>
+
+    <!-- Project Details -->
+    <section class="section project-section">
+        <div class="container">
+            <div class="project-details">
+                <div class="project-description">
+                    <h2>Objective</h2>
+                    <p>The primary goal is to develop an AI-powered diagnostic assistant that:</p>
+                    <ul class="features-list">
+                        <li>Accurately differentiates between benign and malignant breast lesions.</li>
+                        <li>Reduces false positives/negatives in early-stage detection.</li>
+                        <li>Integrates seamlessly with existing medical imaging workflows.</li>
+                    </ul>
+                    
+                    <h3 class="features-title">Key Features</h3>
+                    <ul class="features-list">
+                        <ul class="features-list">
+                            <li><strong>Dataset Integration</strong>: Used the INbreast and CBIS-DDSM datasets, integrating DICOM image metadata and Excel 
+                                labels.</li>
+                            <li><strong>Metadata extraction</strong>: Handled metadata extraction and mapped labels and images for accurate training and 
+                                evaluation.</li>
+                            <li><strong>Deep Learning Model</strong>: Implemented a convolutional neural network (CNN) for binary classification using 
+                                PyTorch.</li>
+                            <li><strong>Preprocessing</strong>: Normalization, ROI extraction, and augmentation.</li>
+                            <li><strong>Data Analysis</strong>: Plotted BI-RADS distribution and explored tumor patterns for insights into dataset 
+                                characteristics.</li>
+                            <li><strong>Performance metrics</strong>: Accuracy, precision, recall, and AUC-ROC.</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <div class="technologies">
+                    <h2>Technologies Used</h2>
+                    <p>The implementation combines computer vision techniques and Data analysis for medical data:</p>
+                    
+                    <div class="tech-list">
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Pytorch</span>
+                        <span class="tech-item">OpenCV</span>
+                        <span class="tech-item">CNN</span>
+                        <span class="tech-item">Features Extraction</span>
+                        <span class="tech-item">Data analysis</span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Mariam Essam</h3>
+                    <p>Professional AI Engineer | NLP & Computer Vision Specialist creating modern, efficient, and scalable AI solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul class="nav-links">
+                        <div class="nav-column">
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#skills">Skills</a></li>
+                            
+                        </div>
+                        <div class="nav-column">
+                            <li><a href="index.html#projects">Projects</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                        </div>
+                        <div class="nav-column">
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </div>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022 Mariam Essam. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="./js/projects.js"></script>
+</body>
+</html>
