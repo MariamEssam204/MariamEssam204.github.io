@@ -196,3 +196,8 @@ audio {
         max-width: 100%;
     }
 }
+@media (max-width: 768px) {  
+  .ml-model-viz {  
+    width: 100% !important; /* Override desktop styles */  
+  }  
+}  
