@@ -876,3 +876,8 @@ section.visible {
     }
 }
 }
+@media (max-width: 768px) {  
+  .ml-model-viz {  
+    width: 100% !important; /* Override desktop styles */  
+  }  
+}  
