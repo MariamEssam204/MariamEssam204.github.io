@@ -46,6 +46,7 @@ section {
 
 .section-title {
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 50px;
     font-size: 2.5rem;
     color: var(--dark-color);
@@ -833,5 +834,44 @@ footer {
     .btn, .btn-outline {
         padding: 5px 10px;
         font-size: 0.7rem;
+    }
+}
+/* Footer Links - Fix for mobile */
+.footer-links .nav-links {
+    display: flex; /* Override the mobile hidden state */
+    flex-direction: row; /* Keep horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center; /* Center the links */
+    gap: 15px; /* Add some spacing */
+}
+
+.footer-links .nav-column {
+    margin: 0 15px; /* Add horizontal spacing between columns */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .footer-links .nav-links {
+        flex-direction: column; /* Stack vertically on small screens */
+        align-items: center; /* Center align items */
+    }
+    
+    .footer-links .nav-column {
+        margin: 10px 0; /* Vertical spacing between columns */
+    }
+}
+
+/* Ensure the footer nav stays visible on mobile */
+@media (max-width: 768px) {
+    .footer-links .nav-links {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .footer-links .nav-links li {
+        margin: 5px 0;
     }
 }
