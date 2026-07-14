@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam Essam | AI Engineer | NLP & Computer Vision Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=DWNklAs2PRnu&format=png&color=000000">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Mariam Essam</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="section">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="section-title" style="margin-bottom: 4px;"><span>Rosetta Decoder</span></h1>
+                <p class="subtitle" style="margin-top: 0;">Hieroglyphic detection and translation — from photo to story using YOLO, Gardiner codes, and generative AI.</p>
+            </div>
+
+            <!-- Interactive Demo (Hugging Face Space embed) -->
+            <div class="image-gallery">
+                <div class="gallery-container">
+                    <h4 class="section-title" style="margin-top: 0; margin-bottom: 4px;"><span>Try it yourself</span></h4>
+                    <p class="caption" style="margin-top: 0;">
+                        Upload a photo of hieroglyphic script and the app will translate it.
+                        Running on a Hugging Face Space — first load may take 20–30 seconds if the Space has been idle.
+                    </p>
+                    <iframe
+                        src="https://rosettadecoder-rosetta-decoder.hf.space"
+                        frameborder="0"
+                        width="100%"
+                        height="900"
+                        style="border-radius: 8px; max-width: 100%;"
+                        loading="lazy"
+                        title="Rosetta Decoder — Interactive Demo"
+                    ></iframe>
+                    <p class="caption">
+                        <a href="https://huggingface.co/spaces/RosettaDecoder/Rosetta-Decoder" target="_blank" rel="noopener">
+                            Open full demo on Hugging Face Spaces ↗
+                        </a>
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="section project-section">
+        <div class="container">
+            <div class="project-details">
+                <div class="project-description">
+                    <h2>About the Project</h2>
+                    <ul class="features-list">
+                        <li>Fine-tuned YOLO model detects individual hieroglyphic symbols in an uploaded image or live webcam feed</li>
+                        <li>Each detected symbol is mapped to its Gardiner code via a structured code database</li>
+                        <li>Exposed as MCP (Model Context Protocol) tools, so the same pipeline can be driven directly from Claude Desktop</li>
+                        <li>Includes a full browsable reference table of supported Gardiner codes, grouped by category (deities, animals, plants, etc.)</li>
+                    </ul>
+
+                    <h3 class="features-title">Technical Implementation</h3>
+                    <strong>🛠️ Detection & Translation Pipeline</strong>:
+                    <ul class="features-list">
+                        <ul class="features-list">
+                            <li><strong>Detection:</strong> YOLO model fine-tuned on hieroglyphic symbols</li>
+                            <li><strong>Symbol mapping:</strong> Custom Gardiner code JSON database for sign descriptions and transliterations</li>
+                            <li><strong>Translation:</strong> API integration for dual-mode output (mystical narrative + academic translation)</li>
+                            <li><strong>Analytics:</strong> Matplotlib-generated frequency, confidence, and spatial heatmap charts</li>
+                            <li><strong>Tool exposure:</strong> Gradio's MCP server mode</li>
+                            <li><strong>Deployment:</strong> Gradio app on Hugging Face Spaces, embedded live on this site</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="technologies">
+                    <h2>Technologies Used</h2>
+                    <p>The implementation combines computer vision, generative AI, and agentic tool integration:</p>
+
+                    <div class="tech-list">
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Ultralytics YOLO</span>
+                        <span class="tech-item">PyTorch</span>
+                        <span class="tech-item">Gradio</span>
+                        <span class="tech-item">MCP (Model Context Protocol)</span>
+                        <span class="tech-item">Matplotlib</span>
+                        <span class="tech-item">Hugging Face Spaces</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Mariam Essam</h3>
+                    <p>Professional AI Engineer | NLP & Computer Vision Specialist creating modern, efficient, and scalable AI solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul class="nav-links">
+                        <div class="nav-column">
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#skills">Skills</a></li>
+
+                        </div>
+                        <div class="nav-column">
+                            <li><a href="index.html#projects">Projects</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                        </div>
+                        <div class="nav-column">
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </div>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mariam Essam. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="./js/projects.js"></script>
+</body>
+</html>
